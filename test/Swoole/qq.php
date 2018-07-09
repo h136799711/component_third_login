@@ -40,7 +40,7 @@ $server->start();
 
 function login($request, $response)
 {
-	$qqOAuth = new \Yurun\OAuthLogin\QQ\OAuth2($GLOBALS['oauth_qq']['appid'], $GLOBALS['oauth_qq']['appkey'], $GLOBALS['oauth_qq']['callbackUrl']);
+	$qqOAuth = new \by\component\third_login\QQ\OAuth2($GLOBALS['oauth_qq']['appid'], $GLOBALS['oauth_qq']['appkey'], $GLOBALS['oauth_qq']['callbackUrl']);
 	// $qqOAuth->loginAgentUrl = $GLOBALS['oauth_qq']['loginAgentUrl'];
 	$url = $qqOAuth->getAuthUrl(
 		// null,	// 回调地址，登录成功后返回该地址
@@ -53,7 +53,7 @@ function login($request, $response)
 
 function callback($request, $response)
 {
-	$qqOAuth = new \Yurun\OAuthLogin\QQ\OAuth2($GLOBALS['oauth_qq']['appid'], $GLOBALS['oauth_qq']['appkey'], $GLOBALS['oauth_qq']['callbackUrl']);
+	$qqOAuth = new \by\component\third_login\QQ\OAuth2($GLOBALS['oauth_qq']['appid'], $GLOBALS['oauth_qq']['appkey'], $GLOBALS['oauth_qq']['callbackUrl']);
 	$state = file_get_contents(__DIR__ . '/state.txt');
 	echo 'state:', $state, PHP_EOL;
 	$response->end(json_encode([

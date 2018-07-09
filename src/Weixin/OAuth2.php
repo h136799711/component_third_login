@@ -1,8 +1,8 @@
 <?php
 namespace by\component\third_login\Weixin;
 
-use by\component\third_login\Base;
 use by\component\third_login\ApiException;
+use by\component\third_login\Base;
 
 class OAuth2 extends Base
 {
@@ -137,11 +137,12 @@ class OAuth2 extends Base
 		}
 	}
 
-	/**
-	 * 获取用户资料
-	 * @param string $accessToken
-	 * @return array
-	 */
+    /**
+     * 获取用户资料
+     * @param string $accessToken
+     * @return array
+     * @throws ApiException
+     */
 	public function getUserInfo($accessToken = null)
 	{
 		$this->result = $this->http->get($this->getUrl('sns/userinfo', array(

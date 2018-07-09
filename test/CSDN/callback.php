@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . '/common.php';
-$csdnOAuth = new \Yurun\OAuthLogin\CSDN\OAuth2($GLOBALS['oauth_csdn']['appid'], $GLOBALS['oauth_csdn']['appkey'], $GLOBALS['oauth_csdn']['callbackUrl']);
+$csdnOAuth = new \by\component\third_login\CSDN\OAuth2($GLOBALS['oauth_csdn']['appid'], $GLOBALS['oauth_csdn']['appkey'], $GLOBALS['oauth_csdn']['callbackUrl']);
 // 解决只能设置一个回调域名的问题，下面地址需要改成你项目中的地址，可以参考./loginAgent.php写法
 // $csdnOAuth->loginAgentUrl = 'http://test.com/test/CSDN/loginAgent.php';
 var_dump(

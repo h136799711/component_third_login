@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . '/common.php';
-$oschinaOAuth = new \Yurun\OAuthLogin\OSChina\OAuth2($GLOBALS['oauth_oschina']['appid'], $GLOBALS['oauth_oschina']['appkey'], $GLOBALS['oauth_oschina']['callbackUrl']);
+$oschinaOAuth = new \by\component\third_login\OSChina\OAuth2($GLOBALS['oauth_oschina']['appid'], $GLOBALS['oauth_oschina']['appkey'], $GLOBALS['oauth_oschina']['callbackUrl']);
 // 解决只能设置一个回调域名的问题，下面地址需要改成你项目中的地址，可以参考./loginAgent.php写法
 // $oschinaOAuth->loginAgentUrl = 'http://yurun.com/test/OSChina/loginAgent.php';
 var_dump(

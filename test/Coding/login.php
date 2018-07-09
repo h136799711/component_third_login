@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . '/common.php';
-$codingOAuth = new \Yurun\OAuthLogin\Coding\OAuth2($GLOBALS['oauth_coding']['appid'], $GLOBALS['oauth_coding']['appkey'], $GLOBALS['oauth_coding']['callbackUrl']);
+$codingOAuth = new \by\component\third_login\Coding\OAuth2($GLOBALS['oauth_coding']['appid'], $GLOBALS['oauth_coding']['appkey'], $GLOBALS['oauth_coding']['callbackUrl']);
 
 // 解决只能设置一个回调域名的问题，下面地址需要改成你项目中的地址，可以参考./loginAgent.php写法
 // $codingOAuth->loginAgentUrl = 'http://localhost/test/Coding/loginAgent.php';
