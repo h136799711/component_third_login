@@ -1,0 +1,15 @@
+{
+    "name": "itboye/component_third_login",
+    "description": "",
+	"type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "by\\component\\third_login\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.4",
+		"itboye/component_http" : "1.0.*"
+    }
+}

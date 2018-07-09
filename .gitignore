@@ -12,7 +12,20 @@ bin-release/
 *.air
 *.ipa
 *.apk
+.idea
+.idea/*
 
+thinkphp/
+.phpintel/
+.DS_Store
+*.bak
+**/bak/
+sftp-config.json
+.vscode/
+vendor/
+composer.lock
+.env
+!deny.txt
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
