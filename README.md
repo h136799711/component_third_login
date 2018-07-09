@@ -28,8 +28,6 @@
 
 ## 代码实例
 
-自v1.2起所有方法统一参数调用，如果需要额外参数的可使用对象属性赋值，具体参考test目录下的测试代码。
-
 下面代码以QQ接口举例，完全可以把QQ字样改为其它任意接口字样使用。
 
 ### 实例化
@@ -62,7 +60,7 @@ $userInfo = $qqOAuth->getUserInfo();
 
 // 这是getAccessToken的api请求返回结果
 // $result = $qqOAuth->result;
-
+****
 // 用户唯一标识
 $openid = $qqOAuth->openid;
 ```
