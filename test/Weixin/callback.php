@@ -9,7 +9,7 @@ $wxOAuth = new \by\component\third_login\Weixin\OAuth2($GLOBALS['oauth_weixin'][
 $wxOAuth->openidMode = by\component\third_login\Weixin\OpenidMode::OPEN_ID;
 */
 var_dump(
-	'access_token:', $wxOAuth->getAccessToken($_SESSION['YURUN_WEIXIN_STATE']),
+	'access_token:', $wxOAuth->getAccessToken($_SESSION['BY_WEIXIN_STATE']),
 	'我也是access_token:', $wxOAuth->accessToken,
 	'请求返回:', $wxOAuth->result
 );

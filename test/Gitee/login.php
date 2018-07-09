@@ -16,5 +16,5 @@ $url = $giteeOAuth->getAuthUrl(
 	null,	// state 为空自动生成
 	null	// scope 只要登录默认为空即可
 );
-$_SESSION['YURUN_GITEE_STATE'] = $giteeOAuth->state;
+$_SESSION['BY_GITEE_STATE'] = $giteeOAuth->state;
 header('location:' . $url);

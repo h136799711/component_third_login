@@ -96,14 +96,15 @@ class OAuth2 extends Base
 		}
 	}
 
-	/**
-	 * 获取用户资料
-	 * @param string $accessToken
-	 * @return array
-	 */
+    /**
+     * 获取用户资料
+     * @param string $accessToken
+     * @return array
+     * @throws ApiException
+     */
 	public function getUserInfo($accessToken = null)
 	{
-		$this->result = $this->http->ua('YurunOAuthLogin')->get($this->getUrl('user', array(
+		$this->result = $this->http->ua('OAuthLogin')->get($this->getUrl('user', array(
 			'access_token'			=>	null === $accessToken ? $this->accessToken : $accessToken,
 		)))->json(true);
 		if(isset($this->result['message']))

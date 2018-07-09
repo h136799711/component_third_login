@@ -1,13 +1,13 @@
 <?php
 namespace by\component\third_login;
 
-use Yurun\Util\HttpRequest;
+use itboye\component\http\HttpRequest;
 
 abstract class Base
 {
 	/**
 	 * http请求类
-	 * @var Yurun\Util\HttpRequest
+	 * @var itboye\component\http\HttpRequest
 	 */
 	public $http;
 

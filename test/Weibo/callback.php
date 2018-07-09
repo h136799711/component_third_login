@@ -4,7 +4,7 @@ $weiboOAuth = new \by\component\third_login\Weibo\OAuth2($GLOBALS['oauth_weibo']
 // 解决只能设置一个回调域名的问题，下面地址需要改成你项目中的地址，可以参考./loginAgent.php写法
 // $weiboOAuth->loginAgentUrl = 'http://test.com/test/Weibo/loginAgent.php';
 var_dump(
-	'access_token:', $weiboOAuth->getAccessToken($_SESSION['YURUN_WEIBO_STATE']),
+	'access_token:', $weiboOAuth->getAccessToken($_SESSION['BY_WEIBO_STATE']),
 	'我也是access_token:', $weiboOAuth->accessToken,
 	'请求返回:', $weiboOAuth->result
 );

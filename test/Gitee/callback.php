@@ -4,7 +4,7 @@ $giteeOAuth = new \by\component\third_login\Gitee\OAuth2($GLOBALS['oauth_gitee']
 // 解决只能设置一个回调域名的问题，下面地址需要改成你项目中的地址，可以参考./loginAgent.php写法
 // $giteeOAuth->loginAgentUrl = 'http://test.com/test/Gitee/loginAgent.php';
 var_dump(
-	'access_token:', $giteeOAuth->getAccessToken($_SESSION['YURUN_GITEE_STATE']),
+	'access_token:', $giteeOAuth->getAccessToken($_SESSION['BY_GITEE_STATE']),
 	'我也是access_token:', $giteeOAuth->accessToken,
 	'请求返回:', $giteeOAuth->result
 );

@@ -4,7 +4,7 @@ $baiduOAuth = new \by\component\third_login\Baidu\OAuth2($GLOBALS['oauth_baidu']
 // 解决只能设置一个回调域名的问题，下面地址需要改成你项目中的地址，可以参考./loginAgent.php写法
 // $baiduOAuth->loginAgentUrl = 'http://test.com/test/Baidu/loginAgent.php';
 var_dump(
-	'access_token:', $baiduOAuth->getAccessToken($_SESSION['YURUN_BAIDU_STATE']),
+	'access_token:', $baiduOAuth->getAccessToken($_SESSION['BY_BAIDU_STATE']),
 	'我也是access_token:', $baiduOAuth->accessToken,
 	'请求返回:', $baiduOAuth->result
 );

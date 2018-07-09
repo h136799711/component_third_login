@@ -17,5 +17,5 @@ $url = $qqOAuth->getAuthUrl(
 	null,	// state 为空自动生成
 	null	// scope 只要登录默认为空即可
 );
-$_SESSION['YURUN_QQ_STATE'] = $qqOAuth->state;
+$_SESSION['BY_QQ_STATE'] = $qqOAuth->state;
 header('location:' . $url);

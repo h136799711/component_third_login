@@ -20,5 +20,5 @@ $url = $weiboOAuth->getAuthUrl(
 	null,	// state 为空自动生成
 	null	// scope 只要登录默认为空即可
 );
-$_SESSION['YURUN_WEIBO_STATE'] = $weiboOAuth->state;
+$_SESSION['BY_WEIBO_STATE'] = $weiboOAuth->state;
 header('location:' . $url);

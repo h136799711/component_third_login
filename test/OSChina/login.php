@@ -16,5 +16,5 @@ $url = $oschinaOAuth->getAuthUrl(
 	null,	// state 为空自动生成
 	'user'	// scope，多个用逗号分隔
 );
-$_SESSION['YURUN_OSCHINA_STATE'] = $oschinaOAuth->state;
+$_SESSION['BY_OSCHINA_STATE'] = $oschinaOAuth->state;
 header('location:' . $url);
