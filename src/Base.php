@@ -7,7 +7,7 @@ abstract class Base
 {
 	/**
 	 * http请求类
-	 * @var by\component\http\HttpRequest
+	 * @var \by\component\http\HttpRequest
 	 */
 	public $http;
 
@@ -108,7 +108,7 @@ abstract class Base
 	 * @param string $numeric_prefix
 	 * @param string $arg_separator
 	 * @param int $enc_type
-	 * @return void
+	 * @return string
 	 */
 	public function http_build_query($query_data, $numeric_prefix = '', $arg_separator = '&', $enc_type = PHP_QUERY_RFC1738)
 	{
@@ -220,10 +220,11 @@ abstract class Base
 	 */
 	public abstract function validateAccessToken($accessToken = null);
 
-	/**
-	 * 输出登录代理页内容，用于解决只能设置一个回调域名/地址的问题
-	 * @return void
-	 */
+    /**
+     * 输出登录代理页内容，用于解决只能设置一个回调域名/地址的问题
+     * @return void
+     * @throws \ReflectionException
+     */
 	public function displayLoginAgent()
 	{
 		$ref = new \ReflectionClass(get_called_class());  
