@@ -1,13 +1,13 @@
 <?php
 namespace by\component\third_login;
 
-use itboye\component\http\HttpRequest;
+use by\component\http\HttpRequest;
 
 abstract class Base
 {
 	/**
 	 * http请求类
-	 * @var itboye\component\http\HttpRequest
+	 * @var by\component\http\HttpRequest
 	 */
 	public $http;
 

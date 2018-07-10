@@ -9,7 +9,7 @@
  */
 require dirname(__DIR__) . '/common.php';
 
-use itboye\component\http\ByHttp;
+use by\component\http\ByHttp;
 
 $GLOBALS['oauth_qq'] = array(
 	'appid'			=>	'',
@@ -19,7 +19,7 @@ $GLOBALS['oauth_qq'] = array(
 );
 
 // 设置 Http 请求处理器为 Swoole
-ByHttp::setDefaultHandler('itboye\component\http\ByHttp\Handler\Swoole');
+ByHttp::setDefaultHandler('by\component\http\ByHttp\Handler\Swoole');
 
 $server = new swoole_http_server('0.0.0.0', 80);
 $server->on('request', function ($request, $response) {
