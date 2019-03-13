@@ -28,6 +28,13 @@ class OAuth2 extends Base
 	 */
 	public $openidMode = OpenidMode::OPEN_ID;
 
+    /**
+     * @param string $storeState
+     * @param null $code
+     * @param null $state
+     * @return array|string
+     * @throws ApiException
+     */
 	public function getAccessToken($storeState = '', $code = null, $state = null)
     {
         $this->result = $this->http->get($this->getUrl('cgi-bin/token', array(
