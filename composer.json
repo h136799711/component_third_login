@@ -10,6 +10,6 @@
     },
     "require": {
         "php": ">=5.4",
-		"itboye/component_http" : "1.0.*"
+		"itboye/component_http" : "1.1.*"
     }
 }
