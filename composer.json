@@ -1,7 +1,7 @@
 {
     "name": "itboye/component_third_login",
     "description": "",
-	"type": "library",
+    "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -9,7 +9,7 @@
         }
     },
     "require": {
-        "php": ">=5.4",
-		"itboye/component_http" : "1.1.*"
+        "php": ">=5.6",
+        "itboye/component_http": "1.2.*"
     }
 }
